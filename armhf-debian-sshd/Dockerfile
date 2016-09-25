@@ -3,11 +3,9 @@ FROM ebspace/armhf-debian:latest
 
 MAINTAINER Hao Tseng "ebspace@gmail.com"
 
-ENV DEBIAN_FRONTEND=noninteractive
-
 # Install openssh-server
 RUN apt-get update && \
-    apt-get install -y openssh-server && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y openssh-server && \
     apt-get autoremove && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
