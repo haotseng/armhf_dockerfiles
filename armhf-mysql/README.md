@@ -144,11 +144,11 @@ The MySQL startup configuration in these Docker images is specified in the file 
 
 If you want to base your changes on the standard configuration file, start your MySQL container in the standard way described above, then do:
 
-    docker exec -it my-container-name cat /etc/my.cnf > /my/custom/config-file
+    docker exec -it my-container-name cat /etc/mysql/my.cnf > /my/custom/config-file
 
 ... where `/my/custom/config-file` is the path and name of the new configuration file. Then start a new MySQL container like this:
 
-    docker run --name my-new-container-name -v /my/custom/config-file:/etc/my.cnf -e MYSQL_ROOT_PASSWORD=my-secret-pw -d ebspace/armhf-mysql:latest
+    docker run --name my-new-container-name -v /my/custom/config-file:/etc/mysql/my.cnf -e MYSQL_ROOT_PASSWORD=my-secret-pw -d ebspace/armhf-mysql:latest
 
 This will start a new MySQL container `my-new-container-name` where the MySQL instance uses the startup options specified in `/my/custom/config-file`.
 
