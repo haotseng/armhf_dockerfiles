@@ -6,3 +6,5 @@ Description:
 
 * `armhf-mysql`       : armhf MySQL
 
+* `armhf-bind-apache` : armhf Bind9 and Apache2
+
