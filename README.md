@@ -2,9 +2,16 @@
 
 Description: 
 
-* `armhf-debian-sshd` : armhf Debian with SSHD
+* ``armhf-debian-sshd``        : armhf Debian with SSHD
 
-* `armhf-mysql`       : armhf MySQL
+* ``armhf-mysql``              : armhf MySQL
 
-* `armhf-bind-apache` : armhf Bind9 and Apache2
+* ``armhf-bind-apache``        : armhf Bind9 and Apache2
 
+* ``armhf-apache-php``         : ARMHF Apache2 with SSL and PHP support
+
+* ``armhf-apache-php-django``  : ARMHF Apache2 with SSL, PHP, Python3, Django support
+
+* ``armhf-php-django-svn``     : ARMHF Apache2 with SSL, PHP, Python3, Django, SVN support
+
+* ``armhf-phpmyadmin``         : ARMHF phpMyAdmin 
